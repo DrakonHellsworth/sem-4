@@ -1,0 +1,80 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "exe1h",
+      "request": "launch",
+      "mainClass": "exe1h",
+      "projectName": "sem 4_d52b3d3e"
+    },
+    {
+      "type": "java",
+      "name": "exe1g",
+      "request": "launch",
+      "mainClass": "exe1g",
+      "projectName": "sem 4_d52b3d3e"
+    },
+    {
+      "type": "java",
+      "name": "exe1f",
+      "request": "launch",
+      "mainClass": "exe1f",
+      "projectName": "sem 4_d52b3d3e"
+    },
+    {
+      "type": "java",
+      "name": "exe1e",
+      "request": "launch",
+      "mainClass": "exe1e",
+      "projectName": "sem 4_d52b3d3e"
+    },
+    {
+      "type": "java",
+      "name": "exe1d",
+      "request": "launch",
+      "mainClass": "exe1d",
+      "projectName": "sem 4_d52b3d3e"
+    },
+    {
+      "type": "java",
+      "name": "exe1c",
+      "request": "launch",
+      "mainClass": "exe1c",
+      "projectName": "sem 4_d52b3d3e"
+    },
+    {
+      "type": "java",
+      "name": "exe1b",
+      "request": "launch",
+      "mainClass": "exe1b",
+      "projectName": "sem 4_d52b3d3e"
+    },
+    {
+      "type": "java",
+      "name": "exe1a",
+      "request": "launch",
+      "mainClass": "exe1a",
+      "projectName": "sem 4_d52b3d3e"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": ".",
+      "program": "build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
