@@ -1,0 +1,1 @@
+//generate hamming code for 1001 with odd parity and detect error in received code

@@ -3,8 +3,8 @@ public class exe1l
 {
     public static void main(String args[])
     {
-        int a=20;
-        int b=10;
+        float a=26;
+        float b=88;
         System.out.println("Addition:"+(a+b));
         System.out.println("Subtraction:"+(a-b));
         System.out.println("Multiplication:"+(a*b));

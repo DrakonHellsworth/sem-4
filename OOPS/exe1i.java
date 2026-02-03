@@ -7,10 +7,16 @@ public class exe1i
         int b=25;
         int c=15;
         if(a>b && a>c)
+        {
             System.out.println("Largest number is:"+a);
+        }
         else if(b>c)
+        {
             System.out.println("Largest number is:"+b);
+        }
         else
+        {
             System.out.println("Largest number is:"+c);
+        }
     }
 }
