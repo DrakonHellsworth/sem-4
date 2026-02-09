@@ -10,3 +10,4 @@ public class exe1k
             System.out.println("Consonant");
     }
 }
+//observations:creates a class named exe1k and checks whether a character is a vowel or consonant using main method and char data type variable ch for the character using if-else statement to determine vowel or consonant status and print the result.

@@ -10,3 +10,4 @@ public class exe1g
             System.out.println("Number is odd");
     }
 }
+//observations:creates a class named exe1g and checks whether a number is even or odd using main method and int data type variable n for the number using modulus operator and if-else statement to determine evenness or oddness.

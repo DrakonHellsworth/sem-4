@@ -9,3 +9,4 @@ public class exe1b
         System.out.println("Sum is:"+sum);
     }
 }
+//observations:creates a class named exe1b and prints the sum of two integers using main method and int data type variables a and b

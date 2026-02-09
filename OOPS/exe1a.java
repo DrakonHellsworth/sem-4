@@ -8,3 +8,4 @@ public class exe1a
         System.out.println("Branch: CSE AIML");
     }
 }
+//observations:creates a class named exe1a and prints the name, roll number and branch of the student.

@@ -10,3 +10,4 @@ public class exe1j
             System.out.println("Not a leap year");
     }
 }
+//observations:creates a class named exe1j and checks whether a year is a leap year using main method and int data type variable year for the year using modulus operator and if-else statement to determine leap year status and print the result.

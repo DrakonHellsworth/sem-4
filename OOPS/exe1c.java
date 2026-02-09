@@ -9,3 +9,4 @@ public class exe1c
         System.out.println("Area of rectangle is:"+area);
     }
 }
+//observations:creates a class named exe1c and prints the area of a rectangle using main method and int data type variables l and b for length and breadth respectively 

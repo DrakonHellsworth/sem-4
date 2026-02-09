@@ -11,3 +11,4 @@ public class exe1l
         System.out.println("Division:"+(a/b));
     }
 }
+//observations:creates a class named exe1l and performs addition, subtraction, multiplication and division using main method and float data type variables a and b for the two numbers and prints the results of the operations.

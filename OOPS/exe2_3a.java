@@ -1,22 +1,24 @@
-//Creating a class Student with attributes name and roll number
+/*create a class with:
+1) one public variable
+2) one private variable
+access them from another class and observe the result */
 class Student
 {
-    String name = "Java";
-    int roll = 35;
+    public String name = "Java";
+    private int roll = 35;
     void details()
     {
         System.out.println("My name is " +name);
         System.out.println("My roll number is " +roll);
     }
 }
-public class exe2c
-
+public class exe2_3a
 {
     public static void main(String args[])
     {
         Student s=new Student();
         s.name="Anmol";
-        s.roll=37;
+        //s.roll=37; //error
         s.details();
     }
 }

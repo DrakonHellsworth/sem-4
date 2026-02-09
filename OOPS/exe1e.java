@@ -13,3 +13,4 @@ public class exe1e
         System.out.println("After swapping:a="+a+" b="+b);
     }
 }
+//observations:creates a class named exe1e and swaps two numbers using a temporary variable and prints the values before and after swapping using main method and int data type variables a and b for the two numbers and temp for temporary variable.
