@@ -19,3 +19,4 @@ public void display()
         s.display();
     }
 }
+//observation: The class exe2_2b has instance variables name and age, which are initialized using a constructor. The display method is called to print the values of name and age to the console using System.out.println() method inside the display method.

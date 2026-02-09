@@ -12,3 +12,4 @@ public class exe2_1a
         obj.printValue(x);
     }
 }
+//observation: The variable x is declared inside the main method and is passed as an argument to the printValue method, which prints its value.

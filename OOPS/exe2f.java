@@ -21,3 +21,4 @@ public class exe2f
         s1.details();
     }
 }
+//observation: The class Student has a default constructor that initializes the instance variables name and roll with default values. The details method is called to print the values of name and roll to the console using System.out.println() method inside the details method. When the main method is executed, it creates an instance of the Student class, which triggers the execution of the default constructor and initializes the variables with default values. The details method is then called to display the values on the console.

@@ -22,3 +22,4 @@ public class exe2_3a
         s.details();
     }
 }
+//observation: The variable name is declared as public, so it can be accessed and modified from the main method. However, the variable roll is declared as private, so it cannot be accessed or modified directly from the main method, resulting in a compilation error if we try to access it. The details method can access both variables since it is within the same class.

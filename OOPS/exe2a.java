@@ -19,3 +19,4 @@ public class exe2a
         s.details();
     }
 }
+//observation: The class student has instance variables name and roll, which are initialized in the main method. The details method is called to print the values of name and roll to the console using System.out.println() method inside the details method.

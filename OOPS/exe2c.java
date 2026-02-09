@@ -20,3 +20,4 @@ public class exe2c
         s.details();
     }
 }
+//observation: The class Student has instance variables name and roll, which are initialized with default values. In the main method, the values of name and roll are updated to "Anmol" and 37 respectively. The details method is called to print the updated values of name and roll to the console using System.out.println() method inside the details method. When the main method is executed, it creates an instance of the Student class, updates the values of name and roll, and calls the details method, which displays the updated values on the console.

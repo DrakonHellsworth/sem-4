@@ -14,3 +14,4 @@ public static void main(String args[])
         obj.sum(a,b);
     }
 }
+//observation: The variables a and b are initialized in the main method and passed as arguments to the sum method, which calculates and prints their sum to the console using System.out.println() method.

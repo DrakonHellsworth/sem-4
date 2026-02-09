@@ -29,3 +29,4 @@ class exe2_6
         s2.display();
     }
 }
+//observation: The class exe2_6 has two constructors, a default constructor that initializes the name and roll variables with default values, and a parameterized constructor that takes two parameters to initialize the variables with specific values. In the main method, two objects of the class are created

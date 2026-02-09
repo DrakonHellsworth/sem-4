@@ -21,3 +21,4 @@ public class exe2e
 
     }
 }
+//observation: The variables name and roll are declared as private, so they cannot be accessed or modified directly from the main method. However, the details method can access both variables since it is within the same class. When the details method is called for both s1 and s2 objects, it prints the values of the instance variables name and roll, which are initialized with default values "Java" and 35 respectively. Since we cannot modify the private variables directly, both s1 and s2 will display the same values when their details method is called.

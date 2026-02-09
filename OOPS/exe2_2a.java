@@ -18,3 +18,4 @@ public class exe2_2a {
         s.display();
     }
 }
+//observation: The class Student has instance variables name and age, which are initialized in the main method. The display method is called to print the values of name and age to the console using System.out.println() method inside the display method.

@@ -19,3 +19,4 @@ class exe2_3b
         s.details();
     }
 }
+//observation: The variables name and roll are declared as private, so they cannot be accessed or modified directly from the main method. However, the details method can access both variables since it is within the same class. In this case, the details method has its own local variables name and roll, which are initialized with different values than the instance variables. When the details method is called, it prints the values of the local variables instead of the instance variables.
