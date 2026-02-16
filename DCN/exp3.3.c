@@ -1,1 +1,0 @@
-//genrate the hamming code for 1100 with even or odd parity and detect error in received code

@@ -1,98 +1,130 @@
-// generate hamming code for 1110 with even parity and detect error in received code
+// generate hamming code for any number of bits with even or odd parity as a choice then detect the error in it
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
-
-int main(void)
+#include <math.h>
+int main()
 {
-    int data[4] = {1, 1, 1, 0};
-    int code[8] = {0}; /* 1-based indexing, positions 1..7 */
-    int i, j;
-
-    /* place data bits: positions 3,5,6,7 */
-    code[3] = data[0];
-    code[5] = data[1];
-    code[6] = data[2];
-    code[7] = data[3];
-
-    /* compute parity bits for even parity at positions 1,2,4 */
-    for (i = 0; i < 3; i++)
+    int m,i,j,p=0,pc=0;
+    printf("Enter number of data bits: ");
+    scanf("%d",&m);
+    printf("Choose parity (0 = even, 1 = odd): ");
+    scanf("%d",&pc);
+    while((int)pow(2,p)<(m+p+1))
     {
-        int pos = 1 << i;
-        int count = 0;
-        for (j = 1; j <= 7; j++)
-        {
-            if (j & pos)
-            {
-                if (code[j] == 1)
-                    count++;
-            }
-        }
-        code[pos] = (count % 2 != 0) ? 1 : 0;
+        p++;
     }
-
-    printf("Hamming code for data 1110 (even parity): ");
-    for (i = 1; i <= 7; i++)
-        printf("%d", code[i]);
-    printf("\n");
-
-    /* read received code and detect error */
+    int r=m+p;
+    int *code=(int*)malloc((r+1)*sizeof(int));
+    if(code==NULL)
     {
-        char s[16];
-        int rec[8] = {0};
-        int syndrome = 0;
-
-        printf("Enter received 7-bit code: ");
-        if (scanf("%15s", s) != 1)
+        return 1;
+    }
+    for(i=0;i<=r;i++)
+    {
+        code[i]=0;
+    }
+    for(i=1,j=0;i<=r;i++)
+    {
+        int isP=0,k;
+        for(k=0;k<p;k++)
         {
-            printf("Invalid input.\n");
-            return 0;
-        }
-        if (strlen(s) != 7)
-        {
-            printf("Input must be exactly 7 bits.\n");
-            return 0;
-        }
-        for (i = 0; i < 7; i++)
-        {
-            if (s[i] != '0' && s[i] != '1')
+            if(i==(int)pow(2,k))
             {
-                printf("Input must contain only 0 or 1.\n");
-                return 0;
+                isP=1;
+                break;
             }
-            rec[i + 1] = s[i] - '0';
         }
-
-        for (i = 0; i < 3; i++)
+        if(isP)
         {
-            int pos = 1 << i;
-            int count = 0;
-            for (j = 1; j <= 7; j++)
-            {
-                if (j & pos)
-                {
-                    if (rec[j] == 1)
-                        count++;
-                }
-            }
-            if (count % 2 != 0)
-                syndrome += pos;
-        }
-
-        if (syndrome == 0)
-        {
-            printf("No error detected.\n");
+            code[i]=0;
         }
         else
         {
-            printf("Error detected at position %d.\n", syndrome);
-            rec[syndrome] = (rec[syndrome] == 0) ? 1 : 0;
+            int bit=0;
+            printf("Enter data bit %d (0/1):",j+1);
+            scanf("%d",&bit);
+            code[i]=bit;
+            j++;
         }
-
-        printf("Corrected code: ");
-        for (i = 1; i <= 7; i++)
-            printf("%d", rec[i]);
-        printf("\n");
     }
-
+    for(i=0;i<p;i++)
+    {
+        int pos=(int)pow(2,i);
+        int cnt=0;
+        for(j=1;j<=r;j++)
+        {
+            if(j&pos)
+            {
+                cnt+=code[j];
+            }
+        }
+        if(pc==0)
+        {
+            code[pos]=cnt%2;
+        }
+        else
+        {
+            code[pos]=!(cnt%2);
+        }
+    }
+    printf("Generated Hamming code: ");
+    for(i=1;i<=r;i++)
+    {
+        printf("%d",code[i]);
+    }
+    printf("\n");
+    char s[r+1];
+    int *rec=(int*)malloc((r+1)*sizeof(int));
+    int n=0;
+    printf("Enter received code (%d bits): ",r);
+    scanf("%s",s);
+    for(i=0;i<r;i++)
+    {
+        rec[i+1]=s[i]-'0';
+    }
+    for(i=0;i<p;i++)
+    {
+        int pos=(int)pow(2,i);
+        int cnt=0;
+        for(j=1;j<=r;j++)
+        {
+            if(j&pos)
+            {
+                cnt+=rec[j];
+            }
+        }
+        if(pc==0)
+        {
+            if(cnt%2!=0)
+            {
+                n+=pos;
+            }
+        }
+        else
+        {
+            if(cnt%2==0)
+            {
+                n+=pos;
+            }
+        }
+    }
+    if(n==0)
+    {
+        printf("No error detected.\n");
+    }
+    else
+    {
+        printf("Error detected at position %d.\n",n);
+        rec[n]^=1;
+    }
+    printf("Corrected code: ");
+    for(i=1;i<=r;i++)
+    {
+        printf("%d",rec[i]);
+    }
+    printf("\n");
+    free(code);
+    free(rec);
     return 0;
 }
