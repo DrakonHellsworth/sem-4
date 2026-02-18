@@ -17,3 +17,4 @@ class exe3_2d
         }
     }
 }
+//Observation: The program uses the Scanner class to read an integer from the user input. It then checks if the number is even or odd by using the modulus operator (%) to determine if the number is divisible by 2. The result is displayed to the user as output using System.out.println().

@@ -16,3 +16,4 @@ class exe3_2a
         System.out.println("Marks: "+marks);
     }
 }
+//Observation: The program uses the Scanner class to read the student's name, roll number, and marks from the user input. It then displays the entered information to the user as output using System.out.println().

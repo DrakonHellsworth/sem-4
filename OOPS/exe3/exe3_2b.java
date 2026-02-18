@@ -13,3 +13,4 @@ class exe3_2b
         System.out.println("Circumference of the circle: "+circumference);
     }
 }
+//Observation: The program uses the Scanner class to read the radius of a circle from the user input. It then calculates the area using the formula A = πr^2 and the circumference using the formula C = 2πr. Finally, it displays the calculated area and circumference to the user as output using System.out.println().

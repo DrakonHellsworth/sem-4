@@ -12,3 +12,4 @@ class exe3_1a
         System.out.println("ASCII value of '"+ch+"' is: "+a);
     }
 }
+//Observation: The program reads a single character from the user input and then converts it to its corresponding ASCII value using type casting. The ASCII value is then displayed to the user as output.

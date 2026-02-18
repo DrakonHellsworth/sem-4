@@ -16,3 +16,4 @@ class exe3e
         System.out.println("Name: "+name);
     }
 }
+//Observation: The program reads an integer (roll number), a character (section), and a string (name) from the user input using BufferedReader. However, there is an issue with reading the character for the section. After reading the integer, the newline character is still in the input buffer, which causes the next read command for the section to read that newline instead of waiting for user input. To fix this, you can add an extra readLine() after reading the integer to consume the leftover newline character before reading the section.

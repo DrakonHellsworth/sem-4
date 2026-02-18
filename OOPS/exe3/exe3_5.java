@@ -13,3 +13,4 @@ class exe3_5
         System.out.printf("Boolean: %b\n", d);
     }
 }
+//Observation: The program uses System.out.printf() to format and print the values of different data types (int, float, char, boolean) using appropriate format specifiers (%d for int, %.2f for float, %c for char, and %b for boolean). The output is displayed to the user as specified in the print statements.

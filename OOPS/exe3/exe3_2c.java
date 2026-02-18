@@ -13,3 +13,4 @@ class exe3_2c
         System.out.println("The product of "+num1+" and "+num2+" is: "+product);
     }
 }
+//Observation: The program uses the Scanner class to read two floating point numbers from the user input. It then calculates their product by multiplying the two numbers and displays the result to the user as output using System.out.println().

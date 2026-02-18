@@ -23,3 +23,4 @@ class exe3_1d
         }
     }
 }
+//Observation: The program reads a string from the user input, reverses the string by iterating through it from the end to the beginning, and then compares the original string with the reversed string to determine if it is a palindrome. The result is displayed to the user as output.

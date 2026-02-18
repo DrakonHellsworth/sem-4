@@ -9,3 +9,4 @@ class exe3c
         System.out.println("The String you entered is: "+str);
     }
 }
+//Observation: The program reads a string from the user input using BufferedReader and then prints the string to the user as output.

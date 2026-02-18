@@ -15,3 +15,4 @@ class exe3_1b
     }
 }
 
+//Observation: The program prompts the user to enter two integers, reads them using BufferedReader, converts the input strings to integers using Integer.parseInt(), calculates their sum, and then displays the result to the user as output.

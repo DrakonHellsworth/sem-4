@@ -17,3 +17,4 @@ class exe3_2e
         System.out.println("The average is: "+average);
     }
 }
+//Observation: The program uses the Scanner class to read the number of elements (N) from the user input. It then uses a for loop to read N numbers from the user, calculating their sum. Finally, it computes the average by dividing the sum by N and displays the result to the user as output using System.out.println().

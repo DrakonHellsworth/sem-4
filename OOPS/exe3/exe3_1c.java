@@ -26,3 +26,5 @@ class exe3_1c
         System.out.println("The largest number among "+num1+","+num2+",and "+num3+" is: "+l);
     }
 }
+
+//Observation: The program prompts the user to enter three integers, reads them using BufferedReader, converts the input strings to integers using Integer.parseInt(), compares the three integers to find the largest one, and then displays the largest number to the user as output using System.out.println().
