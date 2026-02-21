@@ -1,4 +1,3 @@
-package OOPS;
 import java.io.*;
 public class exe3b
 {

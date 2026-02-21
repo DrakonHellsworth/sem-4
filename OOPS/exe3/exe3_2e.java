@@ -13,8 +13,8 @@ class exe3_2e
             System.out.print("Enter number "+(i+1)+": ");
             sum+=sc.nextDouble();
         }
-        double average=sum/n;
-        System.out.println("The average is: "+average);
+        double avg=sum/n;
+        System.out.println("The average is: "+avg);
     }
 }
 //Observation: The program uses the Scanner class to read the number of elements (N) from the user input. It then uses a for loop to read N numbers from the user, calculating their sum. Finally, it computes the average by dividing the sum by N and displays the result to the user as output using System.out.println().

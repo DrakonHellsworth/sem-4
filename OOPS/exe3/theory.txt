@@ -1,0 +1,50 @@
+Theory Used in Exercise 3
+
+BufferedReader and InputStreamReader
+- InputStreamReader(System.in) converts keyboard byte input into character stream.
+- BufferedReader wraps InputStreamReader for efficient text input.
+- read() reads a single character and returns its integer code.
+- readLine() reads an entire line as String.
+- Integer.parseInt() is used with readLine() to convert text into int.
+- While mixing read() and readLine(), newline handling is important to avoid skipped input.
+
+Scanner
+- Scanner (java.util.Scanner) is used for typed keyboard input.
+- nextInt() reads integers.
+- nextDouble() reads floating-point values.
+- nextLine() reads full string lines.
+- Suitable for reading multiple values in sequence.
+
+System.out Output Functions
+- System.out.print() prints without newline.
+- System.out.println() prints with newline.
+- System.out.printf() prints formatted output.
+- Common format specifiers used:
+  %d for int, %.2f for decimal precision, %c for char, %b for boolean.
+
+String Methods Used
+- length() gets string length.
+- charAt(index) accesses characters.
+- equals() compares two strings.
+- These are used in logic like palindrome checking.
+
+Loops
+- for loop is used for repeated input, average calculation, pattern printing, and multiplication table generation.
+
+Conditional Statements
+- if-else is used for decisions like even/odd, largest value, and palindrome status.
+
+Type Casting and Conversions
+- (char) and (int) casting is used to convert between character and numeric code values.
+- parse methods are used to convert string input to numeric data types.
+
+Math Utility
+- Math.PI is used in circle calculations (area and circumference).
+
+Command-line Arguments
+- args[] in main(String args[]) is used to accept values passed during program execution.
+
+Packages
+- package keyword groups related classes into a namespace.
+- Helps in code organization and avoids class name conflicts.
+- If a file declares a package, compile and run using matching folder structure.
