@@ -1,4 +1,4 @@
-//a loop progra to find prime number only using loops
+//a loop program to find prime number only using loops
 public class exe4e
 {
     public static void main(String[] args) 
@@ -23,3 +23,4 @@ public class exe4e
         }
     }
 }
+//Observation: The program checks if a given number is prime by using a for loop to test divisibility from 2 up to half of the number. If the number is divisible by any of these values, it is not prime. The program then prints whether the number is prime or not based on the result of the check.

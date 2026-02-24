@@ -20,3 +20,4 @@ class exe4f
         }
     }
 }
+//Observation: The program demonstrates the use of a switch-case statement to handle menu selection based on user input. The user is expected to provide a choice as a command-line argument, which is then parsed into an integer. The switch statement evaluates the choice and executes the corresponding case block, printing a message for each valid option (1, 2, or 3). If the user enters an invalid choice, the default case is executed, printing "Invalid choice".

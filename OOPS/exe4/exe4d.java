@@ -25,3 +25,4 @@ public class exe4d
         }
     }
 }
+//Observation: The program demonstrates the use of while, do-while, and for loops to print the first 10 odd numbers. Each loop iterates through the odd numbers by incrementing the counter by 2. The output will show the odd numbers from 1 to 19, with a break between each loop to separate the outputs for clarity.

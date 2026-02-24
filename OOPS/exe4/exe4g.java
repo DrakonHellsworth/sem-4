@@ -39,3 +39,4 @@ class exe4g
     }
     }
 }
+//Observation: The program demonstrates the use of 2D and 3D arrays in Java without using any libraries. It initializes a 2D array 'a' with 2 rows and 3 columns, and a 3D array 'b' with 2 blocks, each containing 2 rows and 3 columns. The program then uses nested loops to iterate through the elements of both arrays and prints them in a formatted manner. The output will display the elements of the 2D array followed by the elements of the 3D array in a structured format.

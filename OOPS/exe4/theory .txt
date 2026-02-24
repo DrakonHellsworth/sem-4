@@ -1,0 +1,80 @@
+Theory Used in Exercise 4
+
+Arithmetic Operators
+- Basic arithmetic operators used: +, -, *, /, %.
+- Used for swapping values, digit extraction, expression evaluation, and numeric computation.
+- % gives remainder (used for digits and divisibility checks).
+- / removes last digit in integer digit-processing logic.
+
+Bitwise Operators
+- Operators used: &, |, ^, ~, <<, >>.
+- & is used for carry generation in bitwise addition and for power-of-2 checking logic.
+- ^ is used to add bits without carry in bitwise addition.
+- << is used to shift carry in bit-level addition.
+- |, ^, ~, <<, >> are demonstrated on integer inputs for bit manipulation.
+
+Relational and Logical Checks
+- Relational operators (>, <, ==) are used in condition checks.
+- Logical OR (||) is used in overflow boundary validation.
+- Combined conditions are used for correctness checks (overflow and numeric properties).
+
+Increment and Decrement Operators
+- Post and pre forms are used: a++, ++a, a--, --a.
+- Demonstrates evaluation-order difference between post and pre operations.
+
+Assignment and Compound Expressions
+- Assignment operator (=) stores computed values.
+- Multi-operator expressions are evaluated using precedence and parentheses.
+- Intermediate variable usage is applied to keep expressions readable.
+
+Type Conversion and Casting
+- Implicit conversion: int to double (widening conversion).
+- Explicit conversion: double to int using cast (narrowing conversion).
+- Explicit cast may truncate decimal part (precision loss).
+
+Data Type Limits and Overflow Check
+- Integer.MAX_VALUE and Integer.MIN_VALUE are used to check safe multiplication-by-2 range.
+- Boundary comparison avoids overflow before performing multiplication.
+
+Math Utility Functions
+- Math.pow(base, exponent) is used for compound interest computation.
+- Used with floating-point arithmetic for financial formula evaluation.
+
+Input Handling
+- Scanner is used for keyboard integer input in most exercise files.
+- nextInt() reads numeric input values.
+- Command-line arguments are also used via args[].
+- Integer.parseInt(args[i]) converts argument text into integers.
+
+Output Functions
+- System.out.print() for inline output.
+- System.out.println() for line-based output.
+- System.err.println() also appears for console error stream demonstration.
+
+Loops
+- while loop for repeated checks and iterative processing.
+- do-while loop for post-condition iteration.
+- for loop for controlled counter-based iteration.
+- Nested loops are used for 2D and 3D array traversal.
+- Recursion is used to compute digit sum without loops.
+
+Conditional Branching
+- if-else is used for decisions like overflow, power-of-2, and prime check.
+- switch-case is used for menu-style selection flow.
+- break is used in loops and switch to stop control flow when required.
+
+Arrays
+- 2D arrays are declared and traversed using nested loops.
+- 3D arrays are declared and traversed using triple nested loops.
+- Index-based access is used to print matrix/cube elements.
+
+OOP and Java-Specific Features
+- Class and object creation is used to organize logic into methods.
+- Method calls encapsulate operations such as add, swap, evaluate, and compute.
+- Inheritance is demonstrated with subclass extending superclass.
+- instanceof operator is used for runtime type relationship checking.
+
+Number Property Logic
+- Power-of-2 check uses bit rule: n & (n-1).
+- Prime validation uses trial division loop and early exit with break.
+- Digit-based logic uses repeated modulo and division operations.
