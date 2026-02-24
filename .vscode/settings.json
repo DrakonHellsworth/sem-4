@@ -58,9 +58,10 @@
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "java.search.scope": "all",
   "java.project.sourcePaths": [
-    "OOPS\\exe1",
-    "OOPS\\exe2",
-    "OOPS\\exe3"
+    "OOPS/exe3",
+    "OOPS/exe2",
+    "OOPS/exe1",
+    "OOPS/exe4"
   ],
   "java.project.referencedLibraries": []
 }
