@@ -1,4 +1,4 @@
-//Design an abstract class Appliance with method powerConsumption().Implement subclasses Fan, AC, and Refrigerator.Compute total power consumption using dynamic binding.
+//Design an abstract class Appliance with method powerConsumption()Implement subclasses Fan, AC, and RefrigeratorCompute total power consumption using dynamic binding.
 import java.util.Scanner;
 abstract class Appliance
 {
