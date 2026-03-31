@@ -1,4 +1,4 @@
-//Write a Java program to demonstrate interface-based runtime polymorphism using Payment interface and classes CreditCard and UPI.
+//Write a Java program to demonstrate interface-based runtime polymorphism using Payment interface and classes CreditCard and UPI
 import java.util.Scanner;
 interface Payment
 {

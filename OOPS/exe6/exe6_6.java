@@ -34,3 +34,4 @@ public class exe6_6
         }
     }
 }
+//Observation: In the above code, we have a superclass Animal with a method sound() that prints "Animal makes a sound." The subclasses Dog and Cat extend Animal and override the sound() method to print "Dog barks" and "Cat meows" respectively. In the main method, we create an array of Animal objects and assign instances of Animal, Dog, and Cat to it. We then use a for-each loop to iterate through the array and call the sound() method on each object. This demonstrates runtime polymorphism in Java, as the method that gets called is determined at runtime based on the actual object type (Animal, Dog, or Cat) rather than the reference type (Animal).
